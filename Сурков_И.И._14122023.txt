@@ -1,0 +1,19 @@
+   1  sudo apt update
+   2  sudo apt install mysql-server
+   3  sudo systemctl status mysql
+   4  sudo mysql
+   5  tail
+   6  ls
+   7  sudo mysqladmin -p -u root version
+   8  wget https://download.virtualbox.org/virtualbox/7.0.10/virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+   9  sudo dpkg -i virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+   10  sudo apt -f install
+   11  virtualbox version
+   12  hostnamectl
+   13  ls
+   14  dpkg -l | grep  virtualbox
+   15  dpkg -r virtualbox-7.0 
+   16  sudo dpkg -r virtualbox-7.0 
+   17  dpkg -l | grep  virtualbox
+   18  sudo dpkg -r 7.0.10-158379~Ubuntu~jammy 
+   19  history
