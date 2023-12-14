@@ -1,0 +1,53 @@
+1.	Использование команды cat в Linux
+cat > Pets.txt 
+собаки 
+кошки
+хомяки
+cat > PackAnimals.txt
+лошади
+верблюды
+ослы
+
+
+cat Pets.txt PackAnimals.txt 
+собаки
+кошки
+хомяки
+лошади
+верблюды
+ослы
+
+cat Pets.txt PackAnimals.txt > HumanFriends.txt
+ls
+ HumanFriends.txt   Temp        Загрузки      Общедоступные
+ PackAnimals.txt    Видео       Изображения  'Рабочий стол'
+ Pets.txt           Документы   Музыка        Шаблоны
+
+2.	Работа с директориями в Linux
+mkdir newDirectory
+mv HumanFriends.txt newDirectory/
+
+
+3.	Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
+sudo apt update
+sudo apt install mysql-server
+systemctl status mysql
+
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset:>
+     Active: active (running) since Thu 2023-11-30 18:10:44 MSK; 15h ago
+   Main PID: 1024 (mysqld)
+     Status: "Server is operational"
+      Tasks: 38 (limit: 9260)
+     Memory: 406.5M
+     CGroup: /system.slice/mysql.service
+             └─1024 /usr/sbin/mysqld
+
+
+wget https://download.virtualbox.org/virtualbox/7.0.10/virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+
+4.	Управление deb-пакетами
+sudo dpkg -i virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+
+dpkg -l | grep  virtualbox
+sudo dpkg -r virtualbox-7.0
